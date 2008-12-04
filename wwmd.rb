@@ -19,9 +19,26 @@ __END__
     %meta{ :content => "text/html;charset=utf-8", "http-equiv" => "Content-Type" }/
     %title What would Myles do?
     %style{ :type => "text/css", :media => "screen" }
-      body{margin:0px;padding:0px;overflow:hidden;background:#FF0 url('/myles.jpg') center no-repeat;z-index:0;}
-      \#background{position:absolute;height:100%;width:100%;}
-      \#mism{overflow:auto;position:relative;height:100%;width:100%;left:0px;top:200px;color:white;text-align:center;margin:0 auto;padding:0 40px;font-family:Arial;font-size:72px;text-shadow:#000 2px 2px 2px;font-weight:bold;}
+      :sass
+        *
+          :margin 0
+          :padding 0
+        body
+          :overflow hidden
+          :background #FF0 url("/myles.jpg") center no-repeat
+          :z-index 0
+          :position relative
+          :height 100%
+        h1
+          :position static
+          :margin-top 2em
+          
+          :line-height 1em
+          :color white
+          :text-align center
+          :font-family Arial, sans-serif
+          :font-size 72px
+          :text-shadow #000 0 2px
+          :font-weight bold
   %body
-    #background
-    %p#mism= ism
+    %h1= ism
