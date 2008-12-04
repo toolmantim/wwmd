@@ -1,3 +1,5 @@
+require File.dirname(__FILE__) + '/enumerable_ext'
+
 class MylesIsms
   @@default_options = {
     :ism_file_path => "m-isms.txt"

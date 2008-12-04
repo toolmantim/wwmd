@@ -4,10 +4,7 @@ gem 'haml'
 $:.unshift File.dirname(__FILE__) + '/sinatra/lib'
 require 'sinatra'
 
-$:.unshift File.dirname(__FILE__) + '/lib'
-require 'myles_isms'
-
-get '' do
+get '/' do
   @ism = MylesIsms.random
   haml :index
 end

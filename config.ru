@@ -1,5 +1,5 @@
 require File.dirname(__FILE__) + '/sinatra/lib/sinatra'
-require 'wwmd'
+require File.dirname(__FILE__) + '/lib/myles_isms'
 
 Sinatra::Application.default_options.merge!(
   :run => false,
