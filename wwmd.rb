@@ -6,11 +6,11 @@ require 'sinatra'
 
 get '/' do
   @ism = MylesIsms.random
-  haml :index
+  haml :index, :locals => {:ism => @ism}
 end
 
 use_in_file_templates!
 
 __END__
 @@ index
-= @ism
+= ism
