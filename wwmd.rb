@@ -13,4 +13,17 @@ use_in_file_templates!
 
 __END__
 @@ index
-= ism
+!!!
+%html{ "xml:lang" => "en", :lang => "en", :xmlns => "http://www.w3.org/1999/xhtml" }
+  %head
+    %meta{ :content => "text/html;charset=utf-8", "http-equiv" => "Content-Type" }/
+    %title
+      untitled
+    %style{ :type => "text/css", :media => "screen" }
+      body{margin:0px;padding:0px;overflow:hidden;background:#FF0 url('http://farm3.static.flickr.com/2314/2053984752_72f78bf265_o.jpg') center no-repeat;z-index:0;}
+      \#background{position:absolute;height:100%;width:100%;}
+      \#mism{overflow:auto;position:relative;height:100%;width:100%;left:0px;top:200px;color:white;text-align:center;margin:0 auto;padding:0 40px;font-family:Arial;font-size:72px;text-shadow:#000 0 2px 0;font-weight:bold;}
+  %body
+    #background
+    #mism
+      = ism
