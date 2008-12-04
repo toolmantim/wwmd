@@ -2,3 +2,4 @@ Do the simplest thing that can possibly work.
 Fuck databases.
 Fuck RSpec.
 That's how I roll, bitches.
+Thats just fucken stupid.
