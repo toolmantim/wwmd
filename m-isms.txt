@@ -1,0 +1,2 @@
+Do the simplest thing that can possibly work.
+Fuck databases.
