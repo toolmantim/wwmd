@@ -24,4 +24,4 @@ __END__
       \#mism{overflow:auto;position:relative;height:100%;width:100%;left:0px;top:200px;color:white;text-align:center;margin:0 auto;padding:0 40px;font-family:Arial;font-size:72px;text-shadow:#000 2px 2px 2px;font-weight:bold;}
   %body
     #background
-    #mism= ism
+    p#mism= ism
