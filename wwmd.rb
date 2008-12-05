@@ -48,7 +48,7 @@ __END__
               :width 100px
               :position absolute
               :top 226px
-              :left 142px
+              :left 141px
           #container
             :position absolute
             :display table
