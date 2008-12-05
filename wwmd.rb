@@ -4,6 +4,12 @@ gem 'haml'
 $:.unshift File.dirname(__FILE__) + '/sinatra/lib'
 require 'sinatra'
 
+# Images in development
+# get '/images/*' do
+#   filename = params['splat'].first
+#   send_file File.join(File.dirname(__FILE__),'public/images',filename)
+# end
+
 get '/' do
   @ism = MylesIsms.random
   haml :index, :locals => {:ism => @ism}
@@ -35,6 +41,14 @@ __END__
           #background
             :background url('/images/footer.png') no-repeat 0 0
             :height 407px
+            :position relative
+            #mouth
+              :background url('/images/mouth.png') no-repeat
+              :height 100px
+              :width 100px
+              :position absolute
+              :top 226px
+              :left 142px
           #container
             :position absolute
             :display table
@@ -45,19 +59,35 @@ __END__
               :width 441px
               :vertical-align middle
               :display table-cell
-              
               :background url('/images/speech-bubble.png') no-repeat
               :font-family Arial, sans-serif
               :font-size 30px
               :font-weight bold
               :text-align center
-              :color #333
               :padding 0 70px
+              :color #333
+              :text-decoration none
+
   %body
     #content
       %h1
         %img{ :src => '/images/what-would-myles-do.png' }
       #background
+        #mouth
       #container
-        #bubble
-          %a{:href => "/"}= ism
+        %a#bubble{:href => "/"}= ism
+    %script{ :src => 'http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js', :type => 'text/javascript', :charset => 'utf-8' }
+    :javascript
+      function animateMouth (mouth) {
+        var mouth = $("#mouth")
+        var mouthStart = 226;
+        var mouthEnd   = mouthStart + 2 + Math.floor(Math.random()*6);
+        console.log(mouthEnd);
+        mouth.animate({top: mouthEnd}, 400);
+        mouth.animate({top: mouthStart}, 400);
+        window.setTimeout('animateMouth()', 800);
+      }
+    
+      $(document).ready(function(){;
+          animateMouth($("#mouth"));
+      })
