@@ -5,10 +5,10 @@ $:.unshift File.dirname(__FILE__) + '/sinatra/lib'
 require 'sinatra'
 
 # Images in development
-# get '/images/*' do
-#   filename = params['splat'].first
-#   send_file File.join(File.dirname(__FILE__),'public/images',filename)
-# end
+get '/images/*' do
+  filename = params['splat'].first
+  send_file File.join(File.dirname(__FILE__),'public/images',filename)
+end
 
 get '/' do
   @ism = MylesIsms.random
@@ -81,7 +81,7 @@ __END__
       function animateMouth (mouth) {
         var mouth = $("#mouth")
         var mouthStart = 226;
-        var mouthEnd   = mouthStart + 2 + Math.floor(Math.random()*6);
+        var mouthEnd   = mouthStart + 2 + Math.floor(Math.random()*10);
         console.log(mouthEnd);
         mouth.animate({top: mouthEnd}, 400);
         mouth.animate({top: mouthStart}, 400);
