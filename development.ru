@@ -8,8 +8,4 @@ Sinatra::Application.default_options.merge!(
   :app_file => 'wwmd.rb'
 )
 
-MylesIsms.default_options.merge!(
-  :ism_file_path => File.dirname(__FILE__) + "/sample-m-isms.txt"
-)
-
 run Sinatra.application

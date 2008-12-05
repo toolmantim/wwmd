@@ -1,13 +1,14 @@
 require File.dirname(__FILE__) + '/enumerable_ext'
+require 'open-uri'
+require 'net/http'
 
 class MylesIsms
-  @@default_options = {
-    :ism_file_path => "m-isms.txt"
-  }
+    URL = URI.parse('http://github.com/toolmantim/wwmd/raw/master/m-isms.txt')
+    
   class << self 
-    def default_options; @@default_options end
     def read_isms
-      File.read(default_options[:ism_file_path])
+      req = Net::HTTP::Get.new(URL.path)
+      Net::HTTP.start(URL.host, URL.port){|http| http.request(req) }.body
     end
     def isms
       read_isms.split(/\r?\n/)
