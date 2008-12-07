@@ -18,5 +18,5 @@ I've quit smoking between cigarettes.
 Are you drunk?
 I do my unit tests in my mind.
 What was your name again?
-Test by design.
+Test to design.
 Throw away your tests.
