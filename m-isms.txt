@@ -1,7 +1,6 @@
 Do the simplest thing that can possibly work.
 Databases are for pussies.
 Fuck RSpec.
-That's how I roll, bitches.
 Thats just fucken stupid.
 Cut two features right now.
 Fuck you guys.
@@ -12,10 +11,12 @@ Do you really want to do that?
 Fuck routes.
 Does my coat look good?
 That is fucking absurd.
-Get right on that.
 I'm off to get drunk(er).
 Just admit it, you are a douche bag.
 I don't get why that's funny.
 I've quit smoking between cigarettes.
 Are you drunk?
-
+I do my unit tests in my mind.
+What was your name again?
+Test by design.
+Throw away your tests.
