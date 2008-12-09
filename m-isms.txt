@@ -23,5 +23,5 @@ Throw away your tests.
 There. Done. Now, on with the jabberscript!
 Also don't use php. Use rails.
 There's a special place in hell reserved for you.
-...if I say something is good in the first couple of months of me using it then you can safely ignore me.
+If I say something is good in the first couple of months of me using it then you can safely ignore me.
 Your entire email was full of bullshit but this paragraph definitely smells the worst.
