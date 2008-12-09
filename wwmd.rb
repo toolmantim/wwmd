@@ -12,7 +12,9 @@ end
 
 get '/' do
   @ism = MylesIsms.random
-  haml :index, :locals => {:ism => @ism}
+  
+  @ism_font_size = (@ism.length < 60) ? 30 : 24
+  haml :index, :locals => {:ism => @ism, :ism_size => @ism_font_size}
 end
 
 use_in_file_templates!
@@ -55,16 +57,15 @@ __END__
             :top 150px
             :left 250px
             #bubble
-              :height 264px
+              :height 254px
               :width 441px
               :vertical-align middle
               :display table-cell
               :background url('/images/speech-bubble.png') no-repeat
               :font-family Arial, sans-serif
-              :font-size 30px
               :font-weight bold
               :text-align center
-              :padding 0 70px
+              :padding 10px 80px 0 80px
               :color #333
               :text-decoration none
 
@@ -75,7 +76,7 @@ __END__
       #background
         #mouth
       #container
-        %a#bubble{:href => "/"}= ism
+        %a#bubble{:href => "/", :style => "font-size: #{@ism_font_size}px;"}= ism
     %script{ :src => 'http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js', :type => 'text/javascript', :charset => 'utf-8' }
     :javascript
       function animateMouth (mouth) {
