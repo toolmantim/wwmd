@@ -26,3 +26,4 @@ There's a special place in hell reserved for you.
 If I say something is good in the first couple of months of me using it then you can safely ignore me.
 Your entire email was full of bullshit but this paragraph definitely smells the worst.
 Is this like that time you wanted me to replace the Javascript date parser with a date formatter?
+You'll never find that bug, FYI.
