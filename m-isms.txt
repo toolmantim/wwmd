@@ -18,6 +18,7 @@ Test to design.
 Throw away your tests.
 There. Done. Now, on with the jabberscript!
 Also don't use PHP. Use Rails.
+It's ridiculous in this day and age that we have to screen scrape a goddamn rails site.
 There's a special place in hell reserved for you.
 If I say something is good in the first couple of months of me using it then you can safely ignore me.
 Your entire email was full of bullshit but this paragraph definitely smells the worst.
