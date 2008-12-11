@@ -83,7 +83,6 @@ __END__
         var mouth = $("#mouth")
         var mouthStart = 226;
         var mouthEnd   = mouthStart + 2 + Math.floor(Math.random()*10);
-        console.log(mouthEnd);
         mouth.animate({top: mouthEnd}, 400);
         mouth.animate({top: mouthStart}, 400);
         window.setTimeout('animateMouth()', 800);
