@@ -79,15 +79,14 @@ __END__
         %a#bubble{:href => "/", :style => "font-size: #{@ism_font_size}px;"}= ism
     %script{ :src => 'http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js', :type => 'text/javascript', :charset => 'utf-8' }
     :javascript
-      function animateMouth (mouth) {
-        var mouth = $("#mouth")
+      function animateMouth() {
+        var mouth = $("#mouth");
         var mouthStart = 226;
         var mouthEnd   = mouthStart + 2 + Math.floor(Math.random()*10);
         mouth.animate({top: mouthEnd}, 400);
         mouth.animate({top: mouthStart}, 400);
         window.setTimeout('animateMouth()', 800);
       }
-    
-      $(document).ready(function(){;
-          animateMouth($("#mouth"));
-      })
+      $(document).ready(function() {
+          animateMouth();
+      });
