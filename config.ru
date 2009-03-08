@@ -1,5 +1,5 @@
-gem 'rack', '0.4.0'
-
+require 'rubygems'
+require File.dirname(__FILE__) + '/rack/lib/rack'
 require File.dirname(__FILE__) + '/sinatra/lib/sinatra'
 require File.dirname(__FILE__) + '/lib/myles_isms'
 
