@@ -1,6 +1,6 @@
-require 'rubygems'
-require File.dirname(__FILE__) + '/rack/lib/rack'
-require File.dirname(__FILE__) + '/sinatra/lib/sinatra'
+gem 'sinatra', '0.9.0.4'
+require 'sinatra'
+
 require File.dirname(__FILE__) + '/lib/myles_isms'
 
 Sinatra::Application.default_options.merge!(

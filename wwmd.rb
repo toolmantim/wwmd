@@ -1,7 +1,7 @@
 require 'rubygems'
 gem 'haml'
 
-$:.unshift File.dirname(__FILE__) + '/sinatra/lib'
+gem 'sinatra', '0.9.0.4'
 require 'sinatra'
 
 # Images in development
